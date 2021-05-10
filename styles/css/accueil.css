@@ -1,4 +1,41 @@
-.restaurants__element {
+.btn {
+  padding: 0.9rem 1.4rem;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  background: linear-gradient(176deg, #ff79da 10%, rgba(147, 86, 220, 0.994835) 93%);
+  font-size: 16px;
+}
+
+.btn__fonctionnement {
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.restaurants {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.restaurants h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.restaurants .restaurants__element {
   margin: 10px 0 25px 0;
   width: 20rem;
   height: 16rem;
@@ -8,10 +45,24 @@
           box-shadow: 4px 4px 20px #c9c9c9;
 }
 
-.restaurants__element img {
+.restaurants .restaurants__element img {
   width: 100%;
   height: 59%;
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.restaurants .restaurants__element .restaurants__element__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__titre {
+  width: 66%;
+}
+
+.restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__coeur {
+  width: 33%;
 }
