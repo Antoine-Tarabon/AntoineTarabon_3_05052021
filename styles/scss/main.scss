@@ -1,5 +1,10 @@
 $color-button:linear-gradient(176deg, rgba(255,121,218,1) 10%, rgba(147,86,220,0.9948354341736695) 93%);
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .btn{
     padding: 0.9rem 1.4rem;
