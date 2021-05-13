@@ -15,3 +15,20 @@ $color-button:linear-gradient(176deg, rgba(255,121,218,1) 10%, rgba(147,86,220,0
     font-size: 16px;
     
 }
+footer{
+    text-align: center;
+    background-color: #353535;
+    padding-bottom: 2rem;
+    .logo__footer{
+        height: 3rem;
+    margin: 1rem;
+    }
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+}

@@ -13,3 +13,23 @@
   background: linear-gradient(176deg, #ff79da 10%, rgba(147, 86, 220, 0.994835) 93%);
   font-size: 16px;
 }
+
+footer {
+  text-align: center;
+  background-color: #353535;
+  padding-bottom: 2rem;
+}
+
+footer .logo__footer {
+  height: 3rem;
+  margin: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
