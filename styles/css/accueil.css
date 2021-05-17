@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+}
+
 .btn {
   padding: 0.9rem 1.4rem;
   border-radius: 35px;
@@ -23,6 +27,8 @@ footer {
 footer .logo__footer {
   height: 3rem;
   margin: 1rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 footer ul {
@@ -38,9 +44,33 @@ main {
   margin: 0rem 10rem;
 }
 
+.localisation {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50px;
+  border-top: solid 2px #cfcfcf;
+}
+
+.localisation .icone_marker {
+  background-color: #eaeaea;
+  border: none;
+}
+
+.localisation .search_input {
+  background-color: #eaeaea;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+
 .explorer {
   text-align: center;
-  margin: 3rem 0;
+  margin: 0rem 0 3rem;
   background-color: #f6f6f6;
 }
 
@@ -58,6 +88,7 @@ main {
 
 .fonctionnement h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .fonctionnement .lesbutton {
@@ -69,8 +100,12 @@ main {
           justify-content: space-between;
 }
 
+.fonctionnement .lesbutton :hover {
+  background-color: #f5edff;
+}
+
 .fonctionnement .lesbutton .btn__fonctionnement {
-  padding: 1rem 2rem;
+  padding: 1.5rem 7rem 1.5rem 1rem;
   border-radius: 20px;
   border: none;
   -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
@@ -79,6 +114,41 @@ main {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3rem;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.fonctionnement .lesbutton .btn__fonctionnement .btn__fonctionnement__num {
+  background-color: #9356dc;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement .lesbutton .btn__fonctionnement .btn__fonctionnement__titre {
+  margin-left: 5rem;
+}
+
+.fonctionnement .lesbutton .btn__fonctionnement .btn__fonctionnement__icone {
+  color: #7e7e7e;
 }
 
 .restaurants {
@@ -103,7 +173,7 @@ main {
 .restaurants .restaurants__element {
   margin: 10px 0 25px 0;
   width: 20rem;
-  height: 20rem;
+  height: 18rem;
   background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: 4px 4px 20px #c9c9c9;
@@ -138,12 +208,28 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
 }
 
 .restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__titre {
   width: 66%;
+  padding-left: 1rem;
+}
+
+.restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__titre h4 {
+  font-weight: normal;
 }
 
 .restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__coeur {
   width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: xx-large;
 }

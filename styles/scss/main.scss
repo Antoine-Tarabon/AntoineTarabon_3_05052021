@@ -1,11 +1,14 @@
-$color-button:linear-gradient(176deg, rgba(255,121,218,1) 10%, rgba(147,86,220,0.9948354341736695) 93%);
 
+$color-button:linear-gradient(176deg, rgba(255,121,218,1) 10%, rgba(147,86,220,0.9948354341736695) 93%);
+$color-localisation:#eaeaea;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+    text-align: center;
+}
 .btn{
     padding: 0.9rem 1.4rem;
     border-radius: 35px;
@@ -21,7 +24,8 @@ footer{
     padding-bottom: 2rem;
     .logo__footer{
         height: 3rem;
-    margin: 1rem;
+        margin: 1rem;
+        filter: invert(1);
     }
     ul{
         list-style-type: none;
@@ -32,3 +36,4 @@ footer{
     }
     
 }
+

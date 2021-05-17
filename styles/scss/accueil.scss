@@ -6,9 +6,27 @@ main{
     margin: 0rem 10rem;
 }
 
+.localisation{
+    background-color: $color-localisation;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    border-top: solid 2px #cfcfcf;
+    .icone_marker{
+        background-color: $color-localisation;
+        border: none;
+    }
+    .search_input{
+        background-color: $color-localisation;
+        border: none;
+        outline: none;
+        margin-left: 1rem;
+    }
+}
+
 .explorer{
     text-align: center;
-    margin: 3rem 0;
+    margin: 0rem 0 3rem;
     background-color: #f6f6f6;
     h1{
         padding-top: 1rem;
@@ -23,17 +41,45 @@ main{
 .fonctionnement{
     h2{
         text-align: center;
+        margin-bottom: 2rem;
     }
     .lesbutton{
         display: flex;
         justify-content: space-between;
+        :hover{
+            background-color:#f5edff;
+        }
         .btn__fonctionnement{
-            padding: 1rem 2rem;
+            padding: 1.5rem 7rem 1.5rem 1rem;
             border-radius: 20px;
             border: none;
             box-shadow: 0 5px 15px 0 #c3c3c3;
             display: flex;
             margin-bottom: 3rem;
+            position: relative;
+            align-items: center;
+            width: 30em;
+            justify-content: center;
+            cursor: pointer;
+            
+            .btn__fonctionnement__num{
+                background-color:#9356dc;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: -0.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn__fonctionnement__titre{
+                margin-left: 5rem;
+            }
+            .btn__fonctionnement__icone{
+                color: #7e7e7e;
+                
+            }
         }
     }
     
@@ -52,7 +98,7 @@ main{
     .restaurants__element{
         margin: 10px 0 25px 0;
         width: 20rem;
-        height: 20rem;
+        height: 18rem;
         background-color: white;
         border-radius: 20px;
         box-shadow: 4px 4px 20px rgb(201, 201, 201);
@@ -78,11 +124,21 @@ main{
         }
         .restaurants__element__description{
             display: flex;
+            padding-top: 0.5rem;
             .restaurants__element__description__titre{
                 width: 66%;
+                padding-left: 1rem;
+                h4{
+                    font-weight: normal;
+                }
             }
             .restaurants__element__description__coeur{
                 width: 33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+                
             }
 
         }
