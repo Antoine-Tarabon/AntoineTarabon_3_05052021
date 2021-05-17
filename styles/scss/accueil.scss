@@ -1,9 +1,11 @@
 @import 'main.scss';
 
 
-
 main{
     margin: 0rem 10rem;
+}
+.logo{
+    margin: 1.2rem;
 }
 
 .localisation{
@@ -45,12 +47,15 @@ main{
     }
     .lesbutton{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         :hover{
             background-color:#f5edff;
         }
         .btn__fonctionnement{
-            padding: 1.5rem 7rem 1.5rem 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 1.5rem 1rem 1.5rem 1rem;
             border-radius: 20px;
             border: none;
             box-shadow: 0 5px 15px 0 #c3c3c3;
@@ -73,12 +78,10 @@ main{
                 justify-content: center;
                 align-items: center;
             }
-            .btn__fonctionnement__titre{
-                margin-left: 5rem;
-            }
             .btn__fonctionnement__icone{
                 color: #7e7e7e;
-                
+                position: absolute;
+                left: 47px;
             }
         }
     }
@@ -86,7 +89,7 @@ main{
 }
 
 .restaurants{
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     background-color: #f6f6f6;
@@ -96,7 +99,7 @@ main{
         margin: 1rem 0 2rem;
     }
     .restaurants__element{
-        margin: 10px 0 25px 0;
+        margin: 10px 1rem 25px 1rem;
         width: 20rem;
         height: 18rem;
         background-color: white;
@@ -144,4 +147,49 @@ main{
         }
     }
 }
+
+@media screen and (max-width: 1024px)
+{
+    .logo{
+        width: 200px;
+    }
+    main{
+        margin: 0rem 0rem;
+    }
+    .lesbutton{
+        justify-content: center;
+    }
+    footer{
+        
+        .logo__footer{
+            width: 270px;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 768px)
+{
+    .logo{
+        width: 200px;
+    }
+    main{
+        margin: 0rem 0rem;
+    }
+    .lesbutton{
+        justify-content: center;
+    }
+    footer{
+        text-align: start;
+        .logo__footer{
+            width: 100px;
+        }
+        ul{
+            margin-left: 1rem;
+        }
+    }
+        
+    
+}
+
 
