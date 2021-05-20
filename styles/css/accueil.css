@@ -105,10 +105,6 @@ main {
           justify-content: center;
 }
 
-.fonctionnement .lesbutton :hover {
-  background-color: #f5edff;
-}
-
 .fonctionnement .lesbutton .btn__fonctionnement {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -130,6 +126,14 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+}
+
+.fonctionnement .lesbutton .btn__fonctionnement:hover {
+  background-color: #f5edff;
+}
+
+.fonctionnement .lesbutton .btn__fonctionnement:hover .btn__fonctionnement__icone {
+  color: #9356dc;
 }
 
 .fonctionnement .lesbutton .btn__fonctionnement .btn__fonctionnement__num {
@@ -237,6 +241,17 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: xx-large;
+}
+
+.restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__coeur:hover {
+  background: linear-gradient(176deg, #ff79da 10%, rgba(147, 86, 220, 0.994835) 93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.restaurants .restaurants__element .restaurants__element__description .restaurants__element__description__coeur:hover i {
+  font-weight: 900;
 }
 
 @media screen and (max-width: 1024px) {

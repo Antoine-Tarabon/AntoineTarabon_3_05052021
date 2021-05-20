@@ -49,9 +49,7 @@ main{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        :hover{
-            background-color:#f5edff;
-        }
+        
         .btn__fonctionnement{
             margin-left: 1rem;
             margin-right: 1rem;
@@ -66,7 +64,13 @@ main{
             width: 30em;
             justify-content: center;
             cursor: pointer;
-            
+            &:hover{
+                background-color: #f5edff;
+                .btn__fonctionnement__icone{
+                    color: #9356dc;
+                }
+            }
+        
             .btn__fonctionnement__num{
                 background-color:#9356dc;
                 border-radius: 100%;
@@ -141,6 +145,15 @@ main{
                 justify-content: center;
                 align-items: center;
                 font-size: xx-large;
+                &:hover{
+                    background: $color-button;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    i{
+                        font-weight: 900;
+                    }
+                }
                 
             }
 
