@@ -5,6 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem;
+    i{
+        position: absolute;
+        left: 4em;
+        font-size: 1.3rem;
+    }
+}
 .banniere{
     height: 100%;
     width: 100%;
@@ -17,7 +29,6 @@
 }
 .menu{
     margin: -3rem 5rem 0;
-    text-align: center;
     background-color: #f6f6f6;
     position: relative;
     border-radius: 25px 25px 0 0;
@@ -27,4 +38,119 @@
         margin: 0 2rem;
         padding: 1rem;
     }
+    .coeur{
+        &:hover{
+            background: $color-button;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            i{
+                font-weight: 900;
+            }
+        }
+    }
+    h2{
+        justify-content: center;
+        display: flex;
+    }
+}
+.entree, .plat, .dessert{
+    margin: 1rem;
+    animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    .entree-container, .plat-container, .dessert-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .carte{
+            border: solid 1px transparent;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px -3px #c3c3c3;
+            margin: 1rem 1rem;
+            width: 25rem;
+            display: flex;
+            .carte-infos{
+                display: flex;
+                align-items: center;
+                margin: 0.7rem 0 0.7rem 0;
+                .carte-title{
+                    width: 17rem;
+                    margin: 0rem 4rem 0 1rem;
+                }
+                .carte-price{
+                    margin: 1rem 0rem 0rem 0rem;
+                }
+            }
+            .carte-confirme{
+                display: none;
+                background-color:#99e2d0;
+                color: white
+            }
+            &:hover{
+                .carte-confirme{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.plat{
+    animation-delay: 0.5s;
+}
+.dessert{
+    animation-delay: 1s;
+}
+
+@keyframes slide-top {
+    0% {
+              transform: translateY(1000px);
+              opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+              opacity: 1;
+    }
+  }
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    .btn{
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    header{
+        i{
+            left: 2em;
+        }
+        .logo__header{
+            width: 150px;
+        }
+    }
+    
+    .menu{
+        margin: -3rem 0rem 0 0;
+        h2{
+            display: flex;
+            justify-content: start;
+            margin-left: 16px;
+         } 
+    }
+    
+    footer{
+        text-align: start;
+        .logo__footer{
+            width: 100px;
+        }
+        ul{
+            margin-left: 1rem;
+        }
+    }
+        
+   
 }

@@ -13,7 +13,7 @@
   <body>
     <header>
       <i class="fas fa-arrow-left"></i>
-      <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <img class="logo__header" src="./images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </header>
     <main>
       <section class="banniere">
@@ -27,18 +27,18 @@
       <section class="menu">
         <div class="nom">
           <h1>A la francaise</h1>
-          <i class="far fa-heart"></i>
+          <div class="coeur"><i class="far fa-heart"></i></div>   
         </div>
         <div class="entree">
           <h2>ENTREES</h2>
           <div class="entree-container">
             <div class="carte">
-              <div>
-               <div class="carte-infos">
+              <div class="carte-infos">
+               <div class="carte-title">
                  <h3>Tartare de thon</h3>
                  <p>Assaisonné au yuzu</p>
                </div>
-               <div>
+               <div class="carte-price">
                  <p>25€</p>
                </div>
               </div>
@@ -46,12 +46,12 @@
             </div>  
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Bouchée de homard croustillant </h3>
                   <p>Et sa farandole de petits légumes</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>35€</p>
                 </div>
               </div>
@@ -59,12 +59,12 @@
             </div>
   
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Velouté de cèpes </h3>
                   <p>Aux truffes</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>20€</p>
                 </div>
               </div>
@@ -78,12 +78,12 @@
           <div class="plat-container">
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Poulet rôti aux herbes de Provence </h3>
                   <p>Et sa crème de truffe</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>40€</p>
                 </div>
               </div>
@@ -91,12 +91,12 @@
             </div>
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Langouste rôtie </h3>
                   <p>Et ses légumes de saison</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>35€</p>
                 </div>
               </div>
@@ -104,12 +104,12 @@
             </div>
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Côte de boeuf Angus </h3>
                   <p>Et sa purée de panais</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>44€</p>
                 </div>
               </div>
@@ -124,12 +124,12 @@
           <div class="dessert-container">
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Farandole de desserts</h3>
                   <p>Du chef</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>18€</p>
                 </div>
               </div>
@@ -137,12 +137,12 @@
             </div>
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Crème brulée </h3>
                   <p>Revisitée</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>22€</p>
                 </div>
               </div>
@@ -150,12 +150,12 @@
             </div>
 
             <div class="carte">
-              <div>
-                <div class="carte-infos">
+              <div class="carte-infos">
+                <div class="carte-title">
                   <h3>Tiramisu </h3>
                   <p>À la noisette</p>
                 </div>
-                <div>
+                <div class="carte-price">
                   <p>23€</p>
                 </div>
               </div>
@@ -165,11 +165,13 @@
           </div>
           
         </div>
-        <button class="btn">Commander</button>
+        <div class="btn-container">
+          <button class="btn">Commander</button>
+       </div>
       </section>
     </main>
     <footer>
-      <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <img class="logo__footer" src="./images/logo/ohmyfood.png" alt="logo ohmyfood" />
       <ul>
         <li>
           <a href="#">
