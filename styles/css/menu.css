@@ -136,7 +136,6 @@ header i {
 }
 
 .entree .entree-container .carte, .entree .plat-container .carte, .entree .dessert-container .carte, .plat .entree-container .carte, .plat .plat-container .carte, .plat .dessert-container .carte, .dessert .entree-container .carte, .dessert .plat-container .carte, .dessert .dessert-container .carte {
-  border: solid 1px transparent;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 10px -3px #c3c3c3;
@@ -152,29 +151,56 @@ header i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0.7rem 0 0.7rem 0;
+  width: 100%;
+  padding: 0.2rem 1rem;
 }
 
 .entree .entree-container .carte .carte-infos .carte-title, .entree .plat-container .carte .carte-infos .carte-title, .entree .dessert-container .carte .carte-infos .carte-title, .plat .entree-container .carte .carte-infos .carte-title, .plat .plat-container .carte .carte-infos .carte-title, .plat .dessert-container .carte .carte-infos .carte-title, .dessert .entree-container .carte .carte-infos .carte-title, .dessert .plat-container .carte .carte-infos .carte-title, .dessert .dessert-container .carte .carte-infos .carte-title {
-  width: 17rem;
-  margin: 0rem 4rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .entree .entree-container .carte .carte-infos .carte-price, .entree .plat-container .carte .carte-infos .carte-price, .entree .dessert-container .carte .carte-infos .carte-price, .plat .entree-container .carte .carte-infos .carte-price, .plat .plat-container .carte .carte-infos .carte-price, .plat .dessert-container .carte .carte-infos .carte-price, .dessert .entree-container .carte .carte-infos .carte-price, .dessert .plat-container .carte .carte-infos .carte-price, .dessert .dessert-container .carte .carte-infos .carte-price {
-  margin: 1rem 0rem 0rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entree .entree-container .carte .carte-infos .carte-price .carte-details, .entree .plat-container .carte .carte-infos .carte-price .carte-details, .entree .dessert-container .carte .carte-infos .carte-price .carte-details, .plat .entree-container .carte .carte-infos .carte-price .carte-details, .plat .plat-container .carte .carte-infos .carte-price .carte-details, .plat .dessert-container .carte .carte-infos .carte-price .carte-details, .dessert .entree-container .carte .carte-infos .carte-price .carte-details, .dessert .plat-container .carte .carte-infos .carte-price .carte-details, .dessert .dessert-container .carte .carte-infos .carte-price .carte-details {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 77px;
 }
 
 .entree .entree-container .carte .carte-confirme, .entree .plat-container .carte .carte-confirme, .entree .dessert-container .carte .carte-confirme, .plat .entree-container .carte .carte-confirme, .plat .plat-container .carte .carte-confirme, .plat .dessert-container .carte .carte-confirme, .dessert .entree-container .carte .carte-confirme, .dessert .plat-container .carte .carte-confirme, .dessert .dessert-container .carte .carte-confirme {
   display: none;
   background-color: #99e2d0;
   color: white;
+  width: 120px;
+  border-radius: 0px 15px 15px 0;
+  border: none;
+  font-size: 1.5rem;
 }
 
 .entree .entree-container .carte:hover .carte-confirme, .entree .plat-container .carte:hover .carte-confirme, .entree .dessert-container .carte:hover .carte-confirme, .plat .entree-container .carte:hover .carte-confirme, .plat .plat-container .carte:hover .carte-confirme, .plat .dessert-container .carte:hover .carte-confirme, .dessert .entree-container .carte:hover .carte-confirme, .dessert .plat-container .carte:hover .carte-confirme, .dessert .dessert-container .carte:hover .carte-confirme {
   display: block;
+  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: scale-in-hor-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.entree .entree-container .carte:hover i, .entree .plat-container .carte:hover i, .entree .dessert-container .carte:hover i, .plat .entree-container .carte:hover i, .plat .plat-container .carte:hover i, .plat .dessert-container .carte:hover i, .dessert .entree-container .carte:hover i, .dessert .plat-container .carte:hover i, .dessert .dessert-container .carte:hover i {
+  -webkit-animation: rotate-center 1s ease-in-out both;
+          animation: rotate-center 1s ease-in-out both;
 }
 
 .plat {
@@ -209,6 +235,62 @@ header i {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
     opacity: 1;
   }
 }
