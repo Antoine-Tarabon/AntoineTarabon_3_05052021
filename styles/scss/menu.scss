@@ -21,6 +21,7 @@ header{
             position: absolute;
             left: 4em;
             font-size: 1.3rem;
+            top: 28px;
         }
     }
     
@@ -187,9 +188,12 @@ header{
 @media screen and (max-width: 768px)
 {
     header{
-        i{
-            left: 2em;
-        }
+        a{
+            i{
+            left: 1em;
+            top: 4px;
+          }
+        }       
         .logo__header{
             width: 150px;
         }
