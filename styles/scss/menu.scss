@@ -67,6 +67,7 @@ header{
             box-shadow: 0px 0px 10px -3px #c3c3c3;
             margin: 1rem 1rem;
             width: 25rem;
+            min-width: 300px;
             display: flex;
             .carte-infos{
                 display: flex;
@@ -84,7 +85,6 @@ header{
                         text-overflow: ellipsis;
                         overflow: hidden;
                         white-space: nowrap;
-                        width: 77px;
                     }
                 }
             }
@@ -97,14 +97,21 @@ header{
                 border: none;
                 font-size: 1.5rem;
             }
+            i{
+                opacity: 0;
+            }
             &:hover{
                 
                 .carte-confirme{
                     display: block;
-                    animation: scale-in-hor-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 }
                 i {
-                    animation: rotate-center 1s ease-in-out both;
+                    animation: rotate-center 0.3s ease-in-out both;
+                }
+                .carte-details{
+                    width: 240px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -130,23 +137,24 @@ header{
 
   @keyframes rotate-center {
     0% {
+      opacity: 0;
       transform: rotate(0);
     }
+    40% {
+        opacity: 1;
+    }
     100% {
+      opacity: 1;
       transform: rotate(360deg);
     }
   }
 
   @keyframes scale-in-hor-right {
     0% {
-      transform: scaleX(0);
-      transform-origin: 100% 100%;
-      opacity: 1;
+      width: 0;
     }
     100% {
-      transform: scaleX(1);
-      transform-origin: 100% 100%;
-      opacity: 1;
+      width: 150px;
     }
   }
 
