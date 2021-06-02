@@ -8,7 +8,7 @@
 h1 {
     font-family: 'Shrikhand';
   }
-  
+
 header{
     display: flex;
     justify-content: center;
@@ -85,6 +85,11 @@ header{
                 padding: 0.2rem 1rem;
                 .carte-title{                   
                     display: flex;
+                    h3{
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
                 }
                 .carte-price{                  
                     display: flex;
@@ -117,8 +122,11 @@ header{
                 i {
                     animation: rotate-center 0.3s ease-in-out both;
                 }
+                .carte-title{
+                    width: 204px;
+                }
                 .carte-details{
-                    width: 240px;
+                    width: 170px;
                     margin-right: 10px;
                 }
             }

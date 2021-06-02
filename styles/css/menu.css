@@ -189,6 +189,12 @@ header a i {
   display: flex;
 }
 
+.entree .entree-container .carte .carte-infos .carte-title h3, .entree .plat-container .carte .carte-infos .carte-title h3, .entree .dessert-container .carte .carte-infos .carte-title h3, .plat .entree-container .carte .carte-infos .carte-title h3, .plat .plat-container .carte .carte-infos .carte-title h3, .plat .dessert-container .carte .carte-infos .carte-title h3, .dessert .entree-container .carte .carte-infos .carte-title h3, .dessert .plat-container .carte .carte-infos .carte-title h3, .dessert .dessert-container .carte .carte-infos .carte-title h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .entree .entree-container .carte .carte-infos .carte-price, .entree .plat-container .carte .carte-infos .carte-price, .entree .dessert-container .carte .carte-infos .carte-price, .plat .entree-container .carte .carte-infos .carte-price, .plat .plat-container .carte .carte-infos .carte-price, .plat .dessert-container .carte .carte-infos .carte-price, .dessert .entree-container .carte .carte-infos .carte-price, .dessert .plat-container .carte .carte-infos .carte-price, .dessert .dessert-container .carte .carte-infos .carte-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,8 +235,12 @@ header a i {
           animation: rotate-center 0.3s ease-in-out both;
 }
 
+.entree .entree-container .carte:hover .carte-title, .entree .plat-container .carte:hover .carte-title, .entree .dessert-container .carte:hover .carte-title, .plat .entree-container .carte:hover .carte-title, .plat .plat-container .carte:hover .carte-title, .plat .dessert-container .carte:hover .carte-title, .dessert .entree-container .carte:hover .carte-title, .dessert .plat-container .carte:hover .carte-title, .dessert .dessert-container .carte:hover .carte-title {
+  width: 204px;
+}
+
 .entree .entree-container .carte:hover .carte-details, .entree .plat-container .carte:hover .carte-details, .entree .dessert-container .carte:hover .carte-details, .plat .entree-container .carte:hover .carte-details, .plat .plat-container .carte:hover .carte-details, .plat .dessert-container .carte:hover .carte-details, .dessert .entree-container .carte:hover .carte-details, .dessert .plat-container .carte:hover .carte-details, .dessert .dessert-container .carte:hover .carte-details {
-  width: 240px;
+  width: 170px;
   margin-right: 10px;
 }
 
