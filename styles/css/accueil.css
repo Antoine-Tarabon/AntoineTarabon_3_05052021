@@ -94,8 +94,57 @@ footer ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: loader 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
-          animation: loader 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+  -webkit-animation: loader 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+          animation: loader 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s both;
+}
+
+.loader .outer-circle {
+  background-color: transparent;
+  border: 8px solid #d26ada;
+  opacity: 0.9;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 150px;
+  width: 220px;
+  height: 220px;
+  animation: spinPulse 3s reverse ease-in-out;
+  position: absolute;
+}
+
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+            transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-400deg);
+            transform: rotate(-400deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+            transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-400deg);
+            transform: rotate(-400deg);
+    opacity: 0;
+  }
 }
 
 main {

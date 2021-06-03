@@ -219,6 +219,7 @@ header a i {
   border-radius: 0px 15px 15px 0;
   border: none;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .entree .entree-container .carte i, .entree .plat-container .carte i, .entree .dessert-container .carte i, .plat .entree-container .carte i, .plat .plat-container .carte i, .plat .dessert-container .carte i, .dessert .entree-container .carte i, .dessert .plat-container .carte i, .dessert .dessert-container .carte i {
