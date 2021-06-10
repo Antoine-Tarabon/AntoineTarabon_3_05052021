@@ -48,7 +48,11 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul a {
+footer ul li {
+  margin-bottom: 0.3rem;
+}
+
+footer ul li a {
   text-decoration: none;
   color: white;
 }

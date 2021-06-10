@@ -87,6 +87,7 @@ main, header, footer {
     }
     .btn{
         margin: 2rem 0;
+        cursor: pointer;
     }
 }
 .fonctionnement{
@@ -103,6 +104,7 @@ main, header, footer {
             margin-left: 1rem;
             margin-right: 1rem;
             padding: 1.5rem 1rem 1.5rem 1rem;
+            background-color:#f6f6f6 ;
             border-radius: 20px;
             border: none;
             box-shadow: 0 5px 15px 0 #c3c3c3;
@@ -110,11 +112,12 @@ main, header, footer {
             margin-bottom: 3rem;
             position: relative;
             align-items: center;
-            width: 30em;
+            width: 24rem;
             justify-content: center;
             cursor: pointer;
             &:hover{
                 background-color: #f5edff;
+                box-shadow: 0 5px 15px 3px #c3c3c3;
                 .btn__fonctionnement__icone{
                     color: #9356dc;
                 }
@@ -130,6 +133,7 @@ main, header, footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                color: white;
             }
             .btn__fonctionnement__icone{
                 color: #7e7e7e;

@@ -48,6 +48,7 @@ header{
         padding: 1rem;
     }
     .coeur{
+        cursor: pointer;
         &:hover{
             background: $color-button;
             -webkit-background-clip: text;
@@ -58,9 +59,18 @@ header{
             }
         }
     }
-    h2{
-        justify-content: center;
+    .title-container{
+        align-items: center;
         display: flex;
+        flex-direction: column;
+    }
+    hr{
+        width: 60px;
+        margin-left: -1.5rem;
+        height: 4px;
+        border: 1px solid $color-primaire;
+        background-color: $color-primaire;
+        display: none;
     }
 }
 .entree, .plat, .dessert{
@@ -104,7 +114,7 @@ header{
             }
             .carte-confirme{
                 display: none;
-                background-color:#99e2d0;
+                background-color: $color-primaire;
                 color: white;
                 width: 120px;
                 border-radius: 0px 15px 15px 0;
@@ -182,7 +192,7 @@ header{
     .btn{
     margin-bottom: 2rem;
     cursor: pointer;
-  }
+    }
 }
 
 
@@ -202,9 +212,13 @@ header{
     
     .menu{
         margin: -3rem 0rem 0 0;
-        h2{
+        hr{
+            margin-left: 0;
+            display: block;
+        }
+        .title-container{
             display: flex;
-            justify-content: start;
+            align-items: start;
             margin-left: 16px;
          } 
     }

@@ -48,7 +48,11 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul a {
+footer ul li {
+  margin-bottom: 0.3rem;
+}
+
+footer ul li a {
   text-decoration: none;
   color: white;
 }
@@ -121,6 +125,10 @@ header a i {
   padding: 1rem;
 }
 
+.menu .coeur {
+  cursor: pointer;
+}
+
 .menu .coeur:hover {
   background: linear-gradient(176deg, #ff79da 10%, rgba(147, 86, 220, 0.994835) 93%);
   -webkit-background-clip: text;
@@ -132,13 +140,26 @@ header a i {
   font-weight: 900;
 }
 
-.menu h2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.menu .title-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu hr {
+  width: 60px;
+  margin-left: -1.5rem;
+  height: 4px;
+  border: 1px solid #99e2d0;
+  background-color: #99e2d0;
+  display: none;
 }
 
 .entree, .plat, .dessert {
@@ -357,13 +378,17 @@ header a i {
   .menu {
     margin: -3rem 0rem 0 0;
   }
-  .menu h2 {
+  .menu hr {
+    margin-left: 0;
+    display: block;
+  }
+  .menu .title-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin-left: 16px;
   }
   footer {

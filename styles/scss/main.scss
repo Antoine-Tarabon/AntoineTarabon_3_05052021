@@ -8,6 +8,7 @@
 }
 $color-button:linear-gradient(176deg, rgba(255,121,218,1) 10%, rgba(147,86,220,0.9948354341736695) 93%);
 $color-localisation:#eaeaea;
+$color-primaire: #99e2d0;
 *{
     margin: 0;
     padding: 0;
@@ -39,10 +40,14 @@ footer{
     }
     ul{
         list-style-type: none;
-        a{
+        li{
+            margin-bottom: 0.3rem;
+            a{
             text-decoration: none;
             color: white;
         }
+     }
+        
     }
     
 }
